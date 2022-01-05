@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9053AFCE2785AFC300D7571E /* PricesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFCD2785AFC300D7571E /* PricesViewController.swift */; };
+		9053AFD12785B02700D7571E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFD02785B02700D7571E /* NewsViewController.swift */; };
+		9053AFD32785B05A00D7571E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFD22785B05A00D7571E /* DiscoverViewController.swift */; };
+		9053AFD62785B2A100D7571E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9053AFD52785B2A100D7571E /* Alamofire */; };
+		9053AFD82785B57500D7571E /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFD72785B57500D7571E /* CoinData.swift */; };
+		9053AFDD2785BD8800D7571E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9053AFDC2785BD8800D7571E /* Kingfisher */; };
+		9053AFE22785BFF600D7571E /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFE02785BFF600D7571E /* CoinCell.swift */; };
+		9053AFE32785BFF600D7571E /* CoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9053AFE12785BFF600D7571E /* CoinCell.xib */; };
 		90C7115D278599FE004C7DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7115C278599FE004C7DB0 /* AppDelegate.swift */; };
 		90C7115F278599FE004C7DB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7115E278599FE004C7DB0 /* SceneDelegate.swift */; };
 		90C71161278599FE004C7DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C71160278599FE004C7DB0 /* ViewController.swift */; };
 		90C71164278599FE004C7DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C71162278599FE004C7DB0 /* Main.storyboard */; };
 		90C71166278599FF004C7DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C71165278599FF004C7DB0 /* Assets.xcassets */; };
 		90C71169278599FF004C7DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C71167278599FF004C7DB0 /* LaunchScreen.storyboard */; };
+		90C7117127859AC4004C7DB0 /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7117027859AC4004C7DB0 /* CoinsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9053AFCD2785AFC300D7571E /* PricesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesViewController.swift; sourceTree = "<group>"; };
+		9053AFD02785B02700D7571E /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		9053AFD22785B05A00D7571E /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		9053AFD72785B57500D7571E /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		9053AFE02785BFF600D7571E /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		9053AFE12785BFF600D7571E /* CoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCell.xib; sourceTree = "<group>"; };
 		90C71159278599FE004C7DB0 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C7115C278599FE004C7DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90C7115E278599FE004C7DB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,7 @@
 		90C71165278599FF004C7DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90C71168278599FF004C7DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90C7116A278599FF004C7DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C7117027859AC4004C7DB0 /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9053AFDD2785BD8800D7571E /* Kingfisher in Frameworks */,
+				9053AFD62785B2A100D7571E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9053AFCF2785AFFE00D7571E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				90C7117027859AC4004C7DB0 /* CoinsViewController.swift */,
+				9053AFCD2785AFC300D7571E /* PricesViewController.swift */,
+				9053AFD02785B02700D7571E /* NewsViewController.swift */,
+				9053AFD22785B05A00D7571E /* DiscoverViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		90C71150278599FE004C7DB0 = {
 			isa = PBXGroup;
 			children = (
+				9053AFD72785B57500D7571E /* CoinData.swift */,
 				90C7115B278599FE004C7DB0 /* CoinTracker */,
 				90C7115A278599FE004C7DB0 /* Products */,
 			);
@@ -60,6 +90,9 @@
 				90C7115E278599FE004C7DB0 /* SceneDelegate.swift */,
 				90C71160278599FE004C7DB0 /* ViewController.swift */,
 				90C71162278599FE004C7DB0 /* Main.storyboard */,
+				9053AFE02785BFF600D7571E /* CoinCell.swift */,
+				9053AFE12785BFF600D7571E /* CoinCell.xib */,
+				9053AFCF2785AFFE00D7571E /* Scenes */,
 				90C71165278599FF004C7DB0 /* Assets.xcassets */,
 				90C71167278599FF004C7DB0 /* LaunchScreen.storyboard */,
 				90C7116A278599FF004C7DB0 /* Info.plist */,
@@ -83,6 +116,10 @@
 			dependencies = (
 			);
 			name = CoinTracker;
+			packageProductDependencies = (
+				9053AFD52785B2A100D7571E /* Alamofire */,
+				9053AFDC2785BD8800D7571E /* Kingfisher */,
+			);
 			productName = CoinTracker;
 			productReference = 90C71159278599FE004C7DB0 /* CoinTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,10 @@
 				Base,
 			);
 			mainGroup = 90C71150278599FE004C7DB0;
+			packageReferences = (
+				9053AFD42785B2A100D7571E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9053AFDB2785BD8800D7571E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 90C7115A278599FE004C7DB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +168,7 @@
 			files = (
 				90C71169278599FF004C7DB0 /* LaunchScreen.storyboard in Resources */,
 				90C71166278599FF004C7DB0 /* Assets.xcassets in Resources */,
+				9053AFE32785BFF600D7571E /* CoinCell.xib in Resources */,
 				90C71164278599FE004C7DB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C71161278599FE004C7DB0 /* ViewController.swift in Sources */,
+				9053AFE22785BFF600D7571E /* CoinCell.swift in Sources */,
 				90C7115D278599FE004C7DB0 /* AppDelegate.swift in Sources */,
+				9053AFD32785B05A00D7571E /* DiscoverViewController.swift in Sources */,
 				90C7115F278599FE004C7DB0 /* SceneDelegate.swift in Sources */,
+				9053AFD82785B57500D7571E /* CoinData.swift in Sources */,
+				9053AFD12785B02700D7571E /* NewsViewController.swift in Sources */,
+				90C7117127859AC4004C7DB0 /* CoinsViewController.swift in Sources */,
+				9053AFCE2785AFC300D7571E /* PricesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +406,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9053AFD42785B2A100D7571E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9053AFDB2785BD8800D7571E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9053AFD52785B2A100D7571E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9053AFD42785B2A100D7571E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9053AFDC2785BD8800D7571E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9053AFDB2785BD8800D7571E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90C71151278599FE004C7DB0 /* Project object */;
 }
