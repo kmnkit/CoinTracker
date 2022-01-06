@@ -19,8 +19,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRo-yc-mDk">
                         <rect key="frame" x="20" y="20" width="10" height="10"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrz-PQ-aV1">
-                        <rect key="frame" x="9" y="29" width="32.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrz-PQ-aV1">
+                        <rect key="frame" x="9" y="29.5" width="32.5" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -28,6 +28,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.78221168028676791" blue="0.90646325268897521" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="vrz-PQ-aV1" firstAttribute="centerX" secondItem="gRo-yc-mDk" secondAttribute="centerX" id="3Ss-rA-yjQ"/>
                 <constraint firstAttribute="trailing" secondItem="gRo-yc-mDk" secondAttribute="trailing" constant="20" id="Kti-YZ-8mn"/>

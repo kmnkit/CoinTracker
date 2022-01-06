@@ -15,6 +15,11 @@
 		9053AFDD2785BD8800D7571E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9053AFDC2785BD8800D7571E /* Kingfisher */; };
 		9053AFE22785BFF600D7571E /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AFE02785BFF600D7571E /* CoinCell.swift */; };
 		9053AFE32785BFF600D7571E /* CoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9053AFE12785BFF600D7571E /* CoinCell.xib */; };
+		90BE57072786A42A00AE4E89 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE57052786A42A00AE4E89 /* PriceCell.swift */; };
+		90BE57082786A42A00AE4E89 /* PriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BE57062786A42A00AE4E89 /* PriceCell.xib */; };
+		90BE570A2786C37F00AE4E89 /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE57092786C37F00AE4E89 /* CoinDetailViewController.swift */; };
+		90BE570D2786D47E00AE4E89 /* CoinLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE570B2786D47E00AE4E89 /* CoinLinkCell.swift */; };
+		90BE570E2786D47E00AE4E89 /* CoinLinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BE570C2786D47E00AE4E89 /* CoinLinkCell.xib */; };
 		90C7115D278599FE004C7DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7115C278599FE004C7DB0 /* AppDelegate.swift */; };
 		90C7115F278599FE004C7DB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7115E278599FE004C7DB0 /* SceneDelegate.swift */; };
 		90C71161278599FE004C7DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C71160278599FE004C7DB0 /* ViewController.swift */; };
@@ -31,6 +36,11 @@
 		9053AFD72785B57500D7571E /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		9053AFE02785BFF600D7571E /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		9053AFE12785BFF600D7571E /* CoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCell.xib; sourceTree = "<group>"; };
+		90BE57052786A42A00AE4E89 /* PriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		90BE57062786A42A00AE4E89 /* PriceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCell.xib; sourceTree = "<group>"; };
+		90BE57092786C37F00AE4E89 /* CoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
+		90BE570B2786D47E00AE4E89 /* CoinLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLinkCell.swift; sourceTree = "<group>"; };
+		90BE570C2786D47E00AE4E89 /* CoinLinkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinLinkCell.xib; sourceTree = "<group>"; };
 		90C71159278599FE004C7DB0 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C7115C278599FE004C7DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90C7115E278599FE004C7DB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +72,38 @@
 				9053AFCD2785AFC300D7571E /* PricesViewController.swift */,
 				9053AFD02785B02700D7571E /* NewsViewController.swift */,
 				9053AFD22785B05A00D7571E /* DiscoverViewController.swift */,
+				90BE57092786C37F00AE4E89 /* CoinDetailViewController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		90BE57022786A3E400AE4E89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				90BE57042786A40800AE4E89 /* Price */,
+				90BE57032786A3F700AE4E89 /* Coin */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		90BE57032786A3F700AE4E89 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				9053AFE02785BFF600D7571E /* CoinCell.swift */,
+				9053AFE12785BFF600D7571E /* CoinCell.xib */,
+				90BE570B2786D47E00AE4E89 /* CoinLinkCell.swift */,
+				90BE570C2786D47E00AE4E89 /* CoinLinkCell.xib */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		90BE57042786A40800AE4E89 /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				90BE57052786A42A00AE4E89 /* PriceCell.swift */,
+				90BE57062786A42A00AE4E89 /* PriceCell.xib */,
+			);
+			path = Price;
 			sourceTree = "<group>";
 		};
 		90C71150278599FE004C7DB0 = {
@@ -90,8 +130,7 @@
 				90C7115E278599FE004C7DB0 /* SceneDelegate.swift */,
 				90C71160278599FE004C7DB0 /* ViewController.swift */,
 				90C71162278599FE004C7DB0 /* Main.storyboard */,
-				9053AFE02785BFF600D7571E /* CoinCell.swift */,
-				9053AFE12785BFF600D7571E /* CoinCell.xib */,
+				90BE57022786A3E400AE4E89 /* Cells */,
 				9053AFCF2785AFFE00D7571E /* Scenes */,
 				90C71165278599FF004C7DB0 /* Assets.xcassets */,
 				90C71167278599FF004C7DB0 /* LaunchScreen.storyboard */,
@@ -168,7 +207,9 @@
 			files = (
 				90C71169278599FF004C7DB0 /* LaunchScreen.storyboard in Resources */,
 				90C71166278599FF004C7DB0 /* Assets.xcassets in Resources */,
+				90BE57082786A42A00AE4E89 /* PriceCell.xib in Resources */,
 				9053AFE32785BFF600D7571E /* CoinCell.xib in Resources */,
+				90BE570E2786D47E00AE4E89 /* CoinLinkCell.xib in Resources */,
 				90C71164278599FE004C7DB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,9 +224,12 @@
 				90C71161278599FE004C7DB0 /* ViewController.swift in Sources */,
 				9053AFE22785BFF600D7571E /* CoinCell.swift in Sources */,
 				90C7115D278599FE004C7DB0 /* AppDelegate.swift in Sources */,
+				90BE57072786A42A00AE4E89 /* PriceCell.swift in Sources */,
 				9053AFD32785B05A00D7571E /* DiscoverViewController.swift in Sources */,
 				90C7115F278599FE004C7DB0 /* SceneDelegate.swift in Sources */,
 				9053AFD82785B57500D7571E /* CoinData.swift in Sources */,
+				90BE570A2786C37F00AE4E89 /* CoinDetailViewController.swift in Sources */,
+				90BE570D2786D47E00AE4E89 /* CoinLinkCell.swift in Sources */,
 				9053AFD12785B02700D7571E /* NewsViewController.swift in Sources */,
 				90C7117127859AC4004C7DB0 /* CoinsViewController.swift in Sources */,
 				9053AFCE2785AFC300D7571E /* PricesViewController.swift in Sources */,

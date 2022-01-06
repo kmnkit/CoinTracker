@@ -5,77 +5,213 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Prices-->
-        <scene sceneID="J04-08-jJi">
+        <!--Coins-->
+        <scene sceneID="kKG-Ps-g40">
             <objects>
-                <viewController id="E5s-2h-PPE" customClass="PricesViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H5I-pB-MDZ">
+                <navigationController id="ymQ-n4-w1z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Coins" image="bitcoinsign.circle" catalog="system" selectedImage="bitcoinsign.circle.fill" id="uMq-0H-aAq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tmW-XQ-uYD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2o9-jI-Axe" kind="relationship" relationship="rootViewController" id="eOu-rm-O2k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2B-1e-CeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="-686"/>
+        </scene>
+        <!--Prices-->
+        <scene sceneID="dzw-cB-aMw">
+            <objects>
+                <navigationController id="LaJ-Kp-YOM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Prices" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="Bud-pM-m1f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6oC-gH-5qW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zoh-zq-dAI" kind="relationship" relationship="rootViewController" id="hRr-bf-KHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggf-DM-hbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="14"/>
+        </scene>
+        <!--Prices-->
+        <scene sceneID="tOS-Su-eNA">
+            <objects>
+                <viewController id="Zoh-zq-dAI" customClass="PricesViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVb-Oe-rBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hhX-8A-GKQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prices" id="xCg-2v-pmJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZK0-tQ-F5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="13"/>
+        </scene>
+        <!--Coin Detail View Controller-->
+        <scene sceneID="ynr-b9-w92">
+            <objects>
+                <viewController storyboardIdentifier="CoinDetailViewController" id="8UD-4k-HbR" customClass="CoinDetailViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jBe-VZ-AiQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-8b-pK3">
-                                <rect key="frame" x="185" y="208" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about coin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in6-LS-rnY">
+                                <rect key="frame" x="20" y="104" width="128" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4MT-Pa-gm1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttp-db-Oht">
+                                <rect key="frame" x="0.0" y="124" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dTN-06-ka8"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-Sd-Ozy">
+                                <rect key="frame" x="0.0" y="224" width="414" height="638"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="zhW-hE-AQA"/>
+                        <viewLayoutGuide key="safeArea" id="2gw-zh-EE8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ttp-db-Oht" firstAttribute="top" secondItem="in6-LS-rnY" secondAttribute="bottom" id="5EJ-JH-Q0r"/>
+                            <constraint firstItem="hVD-Sd-Ozy" firstAttribute="top" secondItem="ttp-db-Oht" secondAttribute="bottom" id="6Bq-Ym-IFz"/>
+                            <constraint firstItem="hVD-Sd-Ozy" firstAttribute="bottom" secondItem="2gw-zh-EE8" secondAttribute="bottom" id="7Y1-uJ-A52"/>
+                            <constraint firstItem="ttp-db-Oht" firstAttribute="leading" secondItem="2gw-zh-EE8" secondAttribute="leading" id="N57-Il-i5O"/>
+                            <constraint firstItem="in6-LS-rnY" firstAttribute="top" secondItem="2gw-zh-EE8" secondAttribute="top" constant="60" id="VLc-eW-d3g"/>
+                            <constraint firstItem="hVD-Sd-Ozy" firstAttribute="leading" secondItem="jBe-VZ-AiQ" secondAttribute="leading" id="h5t-Yn-K3a"/>
+                            <constraint firstItem="ttp-db-Oht" firstAttribute="trailing" secondItem="2gw-zh-EE8" secondAttribute="trailing" id="kJs-oY-UJH"/>
+                            <constraint firstItem="in6-LS-rnY" firstAttribute="leading" secondItem="2gw-zh-EE8" secondAttribute="leading" constant="20" id="m0v-Ro-cYE"/>
+                            <constraint firstAttribute="trailing" secondItem="hVD-Sd-Ozy" secondAttribute="trailing" id="wBP-Ck-jzJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Prices" image="dollarsign.circle" catalog="system" id="I4A-aZ-Xs0"/>
+                    <connections>
+                        <outlet property="coinDesc" destination="ttp-db-Oht" id="wNq-jH-VfJ"/>
+                        <outlet property="pageTitle" destination="in6-LS-rnY" id="XDp-nw-uTR"/>
+                        <outlet property="tableView" destination="hVD-Sd-Ozy" id="DHX-28-hyl"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PrV-cC-7d6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX7-Ou-3Yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="-246"/>
+            <point key="canvasLocation" x="2915.9420289855075" y="-686.38392857142856"/>
         </scene>
         <!--Coins-->
-        <scene sceneID="q0N-Jw-v6D">
+        <scene sceneID="cGr-7s-B9b">
             <objects>
-                <collectionViewController title="Coins" id="tCJ-gR-AQF" customClass="CoinsViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UTt-eK-FNc">
+                <collectionViewController id="2o9-jI-Axe" customClass="CoinsViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ibZ-l9-1XK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cCG-XV-wC2">
-                            <size key="itemSize" width="200" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r4J-9H-k4Y">
+                            <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
-                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="lEW-YS-obO">
-                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="MB5-Dj-A9x">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CoinCell" reuseIdentifier="CoinCell" id="jJL-EJ-r1H" customClass="CoinCell" customModule="CoinTracker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZlG-fj-Mbt">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                                <size key="customSize" width="128" height="128"/>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
-                            <outlet property="dataSource" destination="tCJ-gR-AQF" id="ar9-S8-DAF"/>
-                            <outlet property="delegate" destination="tCJ-gR-AQF" id="ZF9-Oe-TpG"/>
+                            <outlet property="dataSource" destination="2o9-jI-Axe" id="dbc-RJ-yPe"/>
+                            <outlet property="delegate" destination="2o9-jI-Axe" id="bYX-To-bYN"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" image="bitcoinsign.circle" catalog="system" id="8X7-Q4-MEJ"/>
+                    <navigationItem key="navigationItem" title="Coins" id="wFD-nr-W6T"/>
                     <connections>
-                        <outlet property="indicator" destination="lEW-YS-obO" id="yJW-jU-3u5"/>
+                        <outlet property="indicator" destination="MB5-Dj-A9x" id="Lsv-15-aXS"/>
                     </connections>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xsV-LN-WXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBL-9e-eQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.6231884057972" y="-246.42857142857142"/>
+            <point key="canvasLocation" x="2101" y="-686"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="1KE-0e-Jn3">
+            <objects>
+                <navigationController id="xgr-GW-IoY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="jKW-Qh-HQx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Py6-0w-TQK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="krm-Om-bRW" kind="relationship" relationship="rootViewController" id="akp-eQ-pLV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r58-I5-bxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="848"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="aMY-4f-2r1">
+            <objects>
+                <viewController id="krm-Om-bRW" customClass="NewsViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pUo-xs-txC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iFZ-lj-1ep"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="w78-wZ-zDf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZX9-cE-9hD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="848"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="myX-gb-oj3">
+            <objects>
+                <navigationController id="7G3-Mz-Yjw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="heart" catalog="system" selectedImage="heart.fill" id="zfG-zc-ORl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k7R-oW-7SH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i2c-Gc-hXu" kind="relationship" relationship="rootViewController" id="0xL-VI-ntI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81c-7b-bCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="1518"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="bhh-rF-Iuh">
+            <objects>
+                <viewController id="i2c-Gc-hXu" customClass="DiscoverViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Xm-gL-Qfr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xM1-Va-DU8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Discover" id="G5x-mJ-KfY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQ5-AV-zyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="1517"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Jh-Yg-Scq">
@@ -88,72 +224,29 @@
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tCJ-gR-AQF" kind="relationship" relationship="viewControllers" id="jOA-ZN-fzG"/>
-                        <segue destination="E5s-2h-PPE" kind="relationship" relationship="viewControllers" id="wYw-xR-Nx4"/>
-                        <segue destination="9yw-Ir-Dwz" kind="relationship" relationship="viewControllers" id="sTT-Tv-8Ok"/>
-                        <segue destination="PgX-r0-c4b" kind="relationship" relationship="viewControllers" id="LgT-hK-QEh"/>
+                        <segue destination="ymQ-n4-w1z" kind="relationship" relationship="viewControllers" id="tgS-yw-BJn"/>
+                        <segue destination="LaJ-Kp-YOM" kind="relationship" relationship="viewControllers" id="BgI-XI-DJk"/>
+                        <segue destination="xgr-GW-IoY" kind="relationship" relationship="viewControllers" id="OSE-9T-lEZ"/>
+                        <segue destination="7G3-Mz-Yjw" kind="relationship" relationship="viewControllers" id="MP5-8i-gKF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMC-Af-L7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="59"/>
-        </scene>
-        <!--News-->
-        <scene sceneID="reT-kv-I7a">
-            <objects>
-                <viewController id="9yw-Ir-Dwz" customClass="NewsViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DZv-YU-PMS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-iS-2ZD">
-                                <rect key="frame" x="185" y="203" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="5FV-vM-VyK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="Epd-hm-xU2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uof-NX-W9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1215" y="476"/>
-        </scene>
-        <!--Discover-->
-        <scene sceneID="Z1I-C6-YlT">
-            <objects>
-                <viewController id="PgX-r0-c4b" customClass="DiscoverViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cbu-4Z-iBW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqt-3C-jxT">
-                                <rect key="frame" x="185" y="229" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="3Kt-ia-L5v"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="heart" catalog="system" id="UCD-Ak-wcU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2cp-3Y-KCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2019" y="474"/>
+            <point key="canvasLocation" x="-228" y="239"/>
         </scene>
     </scenes>
     <resources>
         <image name="bitcoinsign.circle" catalog="system" width="128" height="121"/>
+        <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
