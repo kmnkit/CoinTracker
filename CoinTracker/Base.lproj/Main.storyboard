@@ -35,26 +35,39 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Zoh-zq-dAI" kind="relationship" relationship="rootViewController" id="hRr-bf-KHu"/>
+                        <segue destination="CNp-UL-UHl" kind="relationship" relationship="rootViewController" id="YJZ-LU-uNb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggf-DM-hbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1258" y="14"/>
         </scene>
-        <!--Prices-->
-        <scene sceneID="tOS-Su-eNA">
+        <!--Price-->
+        <scene sceneID="Cw8-gg-J7H">
             <objects>
-                <viewController id="Zoh-zq-dAI" customClass="PricesViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZVb-Oe-rBf">
+                <tableViewController id="CNp-UL-UHl" customClass="PricesViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DHC-Ke-Co1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="hhX-8A-GKQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Prices" id="xCg-2v-pmJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZK0-tQ-F5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OPf-30-btH">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OPf-30-btH" id="Dwj-FB-Oof">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CNp-UL-UHl" id="Q2U-Ke-dqT"/>
+                            <outlet property="delegate" destination="CNp-UL-UHl" id="3zy-Hj-CkF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Price" id="Xy1-xu-Vnj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Sf-hH-LSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2100" y="13"/>
         </scene>
